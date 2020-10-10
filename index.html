@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <meta charset="utf-8" />
+      <title>GST Calculator</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom_style.css" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+      <div class="title"><h1>GST Calculator</h1></div>
+      <hr />
+      
+      <!-- INPUT VALUES -->
+      <form>
+        <div class="row">
+          <div class="six columns">
+            <label for="product-price">Price of Product in ₹</label>
+            <input type="number"
+            placeholder="0" id="product-price" class="u-full-width" />
+          </div>
+          <div class="six columns">
+            <label for="gst-rate">GST Rate</label>
+            <select name="gst-rate" 
+            id="gst-rate" class="u-full-width">
+              <option value="5">5%</option>
+              <option value="12">12%</option>
+              <option value="18">18%</option>
+              <option value="28">28%</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="u-full-width">Calculate</button>
+        <hr>
+      </form>
+
+      <!-- OUTPUT RESULTS -->
+      <div class="output">
+        <div class="row">
+          <div class="one-half column">
+            <label for="gst-amount">GST Value</label>
+            <span id="gst-amount">0</span>
+          </div>
+          <div class="one-half column">
+            <label for="total-amount">Total Price</label>
+            <span id="total-amount">0</span>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="app.js"></script>
+  </body>
+</html>

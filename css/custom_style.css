@@ -1,0 +1,7 @@
+.output .column {
+    text-align: center;
+}
+
+.output label, .output span {
+    font-size: 2rem;
+}
